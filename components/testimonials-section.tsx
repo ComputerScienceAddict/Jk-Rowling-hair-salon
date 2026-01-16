@@ -25,13 +25,13 @@ export function TestimonialsSection() {
             <HeartIcon className="w-4 h-4" />
             Happy Clients
           </span>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mt-2 text-balance">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mt-2 text-balance">
             What Our Clients Say
           </h2>
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <div className="bg-background rounded-[2rem] p-8 md:p-10 shadow-xl relative border-2 border-primary/10">
+          <div className="bg-background rounded-2xl md:rounded-[2rem] p-6 md:p-10 shadow-xl relative border-2 border-primary/10">
             {/* Decorative corner flowers */}
             <div className="absolute -top-3 -left-3 w-8 h-8 bg-pink-200 rounded-full flex items-center justify-center">
               <svg viewBox="0 0 24 24" className="w-5 h-5 text-pink-500">
@@ -68,7 +68,7 @@ export function TestimonialsSection() {
             </div>
 
             {/* Quote */}
-            <blockquote className="text-lg md:text-xl text-foreground text-center leading-relaxed mb-8 font-medium">
+            <blockquote className="text-base sm:text-lg md:text-xl text-foreground text-center leading-relaxed mb-6 md:mb-8 font-medium px-2">
               {
                 '"Amazing service! Great vibe, super friendly staff, and my hair came out perfect. They took their time and made sure everything was exactly how I wanted. Highly recommend!"'
               }

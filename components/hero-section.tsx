@@ -4,7 +4,7 @@ import { SakuraLogo } from "./cute-icons"
 
 export function HeroSection() {
   return (
-    <section className="pt-24 pb-16 md:pt-32 md:pb-24 relative overflow-hidden">
+    <section className="pt-20 sm:pt-24 pb-12 sm:pb-16 md:pt-32 md:pb-24 relative overflow-hidden">
       <div className="absolute top-24 left-0 w-48 h-48 opacity-20 hidden lg:block">
         <svg viewBox="0 0 200 200" className="w-full h-full text-primary">
           <path
@@ -20,17 +20,17 @@ export function HeroSection() {
         </svg>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 relative">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full">
               <SakuraLogo className="w-5 h-5" />
               <span className="text-sm font-medium text-secondary-foreground">Where Beauty Blooms</span>
             </div>
-            <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground leading-tight text-balance">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl font-bold text-foreground leading-tight text-balance">
               Your Hair, Our Passion
             </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-md">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-md">
               Welcome to JK&apos;s Hair Salon, where every visit is a personalized experience. Let us help you look and
               feel your absolute best.
             </p>
@@ -50,19 +50,19 @@ export function HeroSection() {
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
-                <span className="font-medium">503-526-6148</span>
+                <span className="font-medium text-sm sm:text-base">503-526-6148</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                   <Clock className="w-5 h-5 text-primary" />
                 </div>
-                <span>Tue-Fri: 10AM-6:30PM | Sat: 10AM-5PM</span>
+                <span className="text-sm sm:text-base">Tue-Fri: 10AM-6:30PM | Sat: 10AM-5PM</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
-                <span>Walk-ins Welcome!</span>
+                <span className="text-sm sm:text-base">Walk-ins Welcome!</span>
               </div>
             </div>
           </div>

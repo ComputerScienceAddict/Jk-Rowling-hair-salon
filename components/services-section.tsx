@@ -51,10 +51,10 @@ export function ServicesSection() {
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-3">
             Our Services
           </span>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mt-2 text-balance">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mt-2 text-balance">
             Treatments Made Just for You
           </h2>
-          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-muted-foreground mt-4 max-w-2xl mx-auto px-4">
             We offer a full range of hair services to help you achieve your perfect look.
           </p>
         </div>

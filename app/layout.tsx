@@ -10,8 +10,9 @@ const _playfair = Playfair_Display({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "JK's Hair Salon | Where Beauty Meets Style",
   description:
-    "Welcome to JK's Hair Salon - your neighborhood salon for haircuts, coloring, styling and more. Walk-ins welcome! Call 503-506-6148",
+    "Welcome to JK's Hair Salon - your neighborhood salon for haircuts, coloring, styling and more. Walk-ins welcome! Call 503-526-6148",
   generator: "v0.app",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   icons: {
     icon: [
       {

@@ -10,15 +10,15 @@ export function Navigation() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="max-w-6xl mx-auto px-6 py-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center gap-2 group">
             <SakuraLogo className="w-10 h-10 group-hover:scale-110 transition-transform" />
             <div className="flex flex-col">
-              <span className="font-serif text-2xl font-bold text-foreground leading-none tracking-tight">
+              <span className="font-serif text-xl sm:text-2xl font-bold text-foreground leading-none tracking-tight">
                 JK&apos;s
               </span>
-              <span className="text-xs text-primary font-medium tracking-widest">HAIR SALON</span>
+              <span className="text-[10px] sm:text-xs text-primary font-medium tracking-widest">HAIR SALON</span>
             </div>
           </a>
 
@@ -49,20 +49,36 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pt-4 pb-2 flex flex-col gap-4">
-            <a href="#services" className="text-muted-foreground hover:text-primary transition-colors py-2 font-medium">
+          <div className="md:hidden pt-4 pb-2 flex flex-col gap-3 animate-in slide-in-from-top-2 duration-200">
+            <a 
+              href="#services" 
+              onClick={() => setIsOpen(false)}
+              className="text-muted-foreground hover:text-primary transition-colors py-2 font-medium"
+            >
               Services
             </a>
-            <a href="#gallery" className="text-muted-foreground hover:text-primary transition-colors py-2 font-medium">
+            <a 
+              href="#gallery" 
+              onClick={() => setIsOpen(false)}
+              className="text-muted-foreground hover:text-primary transition-colors py-2 font-medium"
+            >
               Gallery
             </a>
-            <a href="#about" className="text-muted-foreground hover:text-primary transition-colors py-2 font-medium">
+            <a 
+              href="#about" 
+              onClick={() => setIsOpen(false)}
+              className="text-muted-foreground hover:text-primary transition-colors py-2 font-medium"
+            >
               About
             </a>
-            <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors py-2 font-medium">
+            <a 
+              href="#contact" 
+              onClick={() => setIsOpen(false)}
+              className="text-muted-foreground hover:text-primary transition-colors py-2 font-medium"
+            >
               Contact
             </a>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full w-full">
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full w-full mt-2">
               Book Now
             </Button>
           </div>

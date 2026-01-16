@@ -35,8 +35,8 @@ export function ContactSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="bg-card rounded-3xl p-8 space-y-6">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+          <div className="bg-card rounded-2xl md:rounded-3xl p-6 md:p-8 space-y-6">
             <h3 className="font-sans text-2xl font-semibold text-foreground">Get in Touch</h3>
 
             <div className="space-y-4">
@@ -46,7 +46,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Phone</p>
-                  <p className="text-muted-foreground">503-506-6148</p>
+                  <p className="text-muted-foreground text-sm sm:text-base">503-526-6148</p>
                 </div>
               </div>
 
