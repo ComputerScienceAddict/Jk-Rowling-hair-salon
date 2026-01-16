@@ -2,33 +2,28 @@
 
 const galleryImages = [
   {
-    src: "/images/image.png",
-    alt: "JK's Hair Salon styling stations with decorative masks",
+    src: "/images/styling-stations.jpg",
+    alt: "JK's Hair Salon styling stations with decorative masks and modern lighting",
     caption: "Our Styling Stations",
   },
   {
-    src: "/images/image.png",
-    alt: "JK's Hair Salon wash area with Chanel art",
+    src: "/images/washing-area-checkerboard.jpg",
+    alt: "JK's Hair Salon washing area with checkerboard floor and vintage hair dryer",
     caption: "Relaxing Wash Area",
   },
   {
-    src: "/images/image.png",
-    alt: "JK's Hair Salon cozy waiting area",
+    src: "/images/waiting-area.jpg",
+    alt: "JK's Hair Salon cozy waiting area with elegant furnishings",
     caption: "Cozy Waiting Area",
   },
   {
-    src: "/images/image.png",
-    alt: "JK's Hair Salon shampoo stations",
-    caption: "Shampoo Stations",
+    src: "/images/washing-area-chanel.jpg",
+    alt: "JK's Hair Salon wash area with Chanel artwork and product displays",
+    caption: "Premium Wash Stations",
   },
   {
-    src: "/images/image.png",
-    alt: "JK's Hair Salon interior view",
-    caption: "Professional Environment",
-  },
-  {
-    src: "/images/image.png",
-    alt: "JK's Hair Salon storefront",
+    src: "/images/storefront.jpg",
+    alt: "JK's Hair Salon exterior storefront with welcoming entrance",
     caption: "Our Welcoming Entrance",
   },
 ]
