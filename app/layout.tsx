@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Nunito, Playfair_Display } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
@@ -7,12 +7,17 @@ import "./globals.css"
 const _nunito = Nunito({ subsets: ["latin"] })
 const _playfair = Playfair_Display({ subsets: ["latin"] })
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+}
+
 export const metadata: Metadata = {
   title: "JK's Hair Salon | Where Beauty Meets Style",
   description:
     "Welcome to JK's Hair Salon - your neighborhood salon for haircuts, coloring, styling and more. Walk-ins welcome! Call 503-526-6148",
   generator: "v0.app",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   icons: {
     icon: [
       {

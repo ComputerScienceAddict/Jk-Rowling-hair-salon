@@ -1,4 +1,3 @@
-import { Heart, Award, Users } from "lucide-react"
 
 export function AboutSection() {
   return (
@@ -26,30 +25,6 @@ export function AboutSection() {
               With years of experience and a passion for making our clients look their best, we&apos;re dedicated to
               providing personalized service that exceeds your expectations.
             </p>
-
-            <div className="grid grid-cols-3 gap-4 pt-6">
-              <div className="text-center">
-                <div className="w-12 h-12 mx-auto mb-2 bg-primary/20 rounded-full flex items-center justify-center">
-                  <Heart className="w-6 h-6 text-primary" />
-                </div>
-                <p className="text-2xl font-bold text-foreground">15+</p>
-                <p className="text-sm text-muted-foreground">Years Experience</p>
-              </div>
-              <div className="text-center">
-                <div className="w-12 h-12 mx-auto mb-2 bg-primary/20 rounded-full flex items-center justify-center">
-                  <Users className="w-6 h-6 text-primary" />
-                </div>
-                <p className="text-2xl font-bold text-foreground">5000+</p>
-                <p className="text-sm text-muted-foreground">Happy Clients</p>
-              </div>
-              <div className="text-center">
-                <div className="w-12 h-12 mx-auto mb-2 bg-primary/20 rounded-full flex items-center justify-center">
-                  <Award className="w-6 h-6 text-primary" />
-                </div>
-                <p className="text-2xl font-bold text-foreground">4.9</p>
-                <p className="text-sm text-muted-foreground">Star Rating</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

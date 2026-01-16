@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { SakuraLogo } from "./cute-icons"
 
 export function Navigation() {
@@ -36,9 +35,6 @@ export function Navigation() {
             <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors font-medium">
               Contact
             </a>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 shadow-md hover:shadow-lg transition-all">
-              Book Now
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -78,9 +74,6 @@ export function Navigation() {
             >
               Contact
             </a>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full w-full mt-2">
-              Book Now
-            </Button>
           </div>
         )}
       </div>

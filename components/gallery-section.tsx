@@ -1,5 +1,9 @@
 "use client"
 
+import { useState } from "react"
+import { X } from "lucide-react"
+import { Dialog, DialogContent } from "@/components/ui/dialog"
+
 const galleryImages = [
   {
     src: "/images/styling-stations.jpg",
@@ -29,6 +33,8 @@ const galleryImages = [
 ]
 
 export function GallerySection() {
+  const [selectedImage, setSelectedImage] = useState<number | null>(null)
+
   return (
     <section id="gallery" className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
@@ -46,6 +52,7 @@ export function GallerySection() {
           {galleryImages.map((image, index) => (
             <div
               key={index}
+              onClick={() => setSelectedImage(index)}
               className={`relative overflow-hidden rounded-xl md:rounded-2xl cursor-pointer group ${
                 index === 0 ? "sm:col-span-2 md:row-span-2" : ""
               }`}
@@ -61,6 +68,38 @@ export function GallerySection() {
             </div>
           ))}
         </div>
+
+        {/* Image Modal */}
+        {selectedImage !== null && (
+          <Dialog open={selectedImage !== null} onOpenChange={() => setSelectedImage(null)}>
+            <DialogContent className="max-w-5xl w-full p-0 bg-background/95 backdrop-blur-md border-2 border-primary/20 rounded-3xl overflow-hidden">
+              <div className="relative">
+                <button
+                  onClick={() => setSelectedImage(null)}
+                  className="absolute top-4 right-4 z-10 w-10 h-10 bg-background/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors border-2 border-primary/20"
+                  aria-label="Close modal"
+                >
+                  <X className="w-5 h-5 text-foreground" />
+                </button>
+                <div className="relative aspect-video w-full bg-gradient-to-br from-pink-50 to-rose-50">
+                  <img
+                    src={galleryImages[selectedImage]?.src || "/placeholder.svg"}
+                    alt={galleryImages[selectedImage]?.alt || ""}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="p-6 md:p-8 bg-gradient-to-b from-background to-card border-t border-primary/10">
+                  <h3 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-2">
+                    {galleryImages[selectedImage]?.caption}
+                  </h3>
+                  <p className="text-muted-foreground text-sm md:text-base">
+                    {galleryImages[selectedImage]?.alt}
+                  </p>
+                </div>
+              </div>
+            </DialogContent>
+          </Dialog>
+        )}
       </div>
     </section>
   )

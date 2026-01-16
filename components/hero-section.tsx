@@ -1,8 +1,17 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Phone, MapPin, Clock } from "lucide-react"
 import { SakuraLogo } from "./cute-icons"
 
 export function HeroSection() {
+  const scrollToServices = () => {
+    const servicesSection = document.getElementById("services")
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
+
   return (
     <section className="pt-20 sm:pt-24 pb-12 sm:pb-16 md:pt-32 md:pb-24 relative overflow-hidden">
       <div className="absolute top-24 left-0 w-48 h-48 opacity-20 hidden lg:block">
@@ -35,11 +44,9 @@ export function HeroSection() {
               feel your absolute best.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5">
-                Book Appointment
-              </Button>
               <Button
                 variant="outline"
+                onClick={scrollToServices}
                 className="rounded-full px-8 py-6 text-lg border-2 border-primary text-foreground hover:bg-primary/10 bg-transparent"
               >
                 View Services
